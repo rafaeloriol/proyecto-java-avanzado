@@ -8,7 +8,8 @@ public class CocheElectrico extends Coche {
     private AireAcondionado aireacondicionado;
     private Inyeccion inyeccion;
 
-    //public CocheElectrico(){};
+    public CocheElectrico(){}
+
     public CocheElectrico(MotorElectrico electrico, Bateria bateria, AireAcondionado aireacondicionado, Inyeccion inyeccion) {
         this.electrico = electrico;
         this.bateria = bateria;
@@ -59,13 +60,13 @@ public class CocheElectrico extends Coche {
     }
 
     public static CocheElectrico start() {
-        Bateria bateria = new Bateria();
+        Bateria bateria = new Bateria(80);
         bateria.on();
-        MotorElectrico electrico = new MotorElectrico();
+        MotorElectrico electrico = new MotorElectrico(6);
         electrico.on();
-        AireAcondionado aireacondicionado = new AireAcondionado();
+        AireAcondionado aireacondicionado = new AireAcondionado("tipo coche electrico");
         aireacondicionado.on();
-        Inyeccion inyeccion = new Inyeccion();
+        Inyeccion inyeccion = new Inyeccion("tipo coche electrico");
 
         return new CocheElectrico(electrico, bateria, aireacondicionado, inyeccion);
 

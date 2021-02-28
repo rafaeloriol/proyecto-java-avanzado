@@ -1,6 +1,7 @@
 package com.rafaeloriol.proyecto.rest;
 
 import com.rafaeloriol.proyecto.domain.FactoryCoche;
+import com.rafaeloriol.proyecto.error.NoCarFoundException;
 import org.springframework.stereotype.Component;
 
 import javax.ws.rs.*;
@@ -16,9 +17,10 @@ public class CocheController {
 
     @GET
     @Path("{tipo}")
-    public Response cearCoche(@PathParam("tipo") String tipo) throws Exception {
+    public Response cearCoche(@PathParam("tipo") String tipo) throws NoCarFoundException {
 
         return Response.ok(FactoryCoche.crearCoche(tipo)).build();
+
     }
 
 

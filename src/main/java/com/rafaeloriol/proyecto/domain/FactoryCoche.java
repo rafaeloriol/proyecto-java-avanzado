@@ -1,8 +1,10 @@
 package com.rafaeloriol.proyecto.domain;
 
+import com.rafaeloriol.proyecto.error.NoCarFoundException;
+
 public class FactoryCoche {
 
-    public static Coche crearCoche(String tipo) throws Exception {
+    public static Coche crearCoche(String tipo) throws NoCarFoundException {
 
         switch (tipo) {
             case "combustion":
@@ -12,7 +14,7 @@ public class FactoryCoche {
             case "hibrido":
                 return CocheHibrido.start();
             default:
-                throw new Exception("Coche inválido");
+                throw new NoCarFoundException("Coche no válido");
         }
 
     }

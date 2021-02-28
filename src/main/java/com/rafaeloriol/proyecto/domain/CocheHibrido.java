@@ -59,13 +59,13 @@ public class CocheHibrido extends Coche {
     }
 
     public static CocheHibrido start() {
-        Bateria bateria = new Bateria();
+        Bateria bateria = new Bateria(90);
         bateria.on();
-        MotorHibrido hibrido = new MotorHibrido();
+        MotorHibrido hibrido = new MotorHibrido(8);
         hibrido.on();
-        AireAcondionado aireacondicionado = new AireAcondionado();
+        AireAcondionado aireacondicionado = new AireAcondionado("tipo coche híbrido");
         aireacondicionado.on();
-        Inyeccion inyeccion = new Inyeccion();
+        Inyeccion inyeccion = new Inyeccion("tipo coche híbrido");
 
         return new CocheHibrido(hibrido, bateria, aireacondicionado, inyeccion);
     }

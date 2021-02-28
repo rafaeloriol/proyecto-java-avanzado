@@ -59,13 +59,13 @@ private Inyeccion inyeccion;
 
 
     public static CocheCombustion start() {
-        Bateria bateria = new Bateria();
+        Bateria bateria = new Bateria(50);
         bateria.on();
-        MotorCombustion combustion = new MotorCombustion();
+        MotorCombustion combustion = new MotorCombustion(5);
         combustion.on();
-        AireAcondionado aireacondicionado = new AireAcondionado();
+        AireAcondionado aireacondicionado = new AireAcondionado("tipo coche combustion");
         aireacondicionado.on();
-        Inyeccion inyeccion = new Inyeccion();
+        Inyeccion inyeccion = new Inyeccion("tipo coche combustion");
 
         return new CocheCombustion(combustion, bateria, aireacondicionado, inyeccion);
 
