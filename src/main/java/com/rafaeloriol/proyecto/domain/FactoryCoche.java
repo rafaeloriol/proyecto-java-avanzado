@@ -14,7 +14,7 @@ public class FactoryCoche {
             case "hibrido":
                 return CocheHibrido.start();
             default:
-                throw new NoCarFoundException("Coche no válido");
+                throw new NoCarFoundException("COCHE NO VÁLIDO");
         }
 
     }
