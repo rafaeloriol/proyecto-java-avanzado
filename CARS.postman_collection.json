@@ -10,7 +10,19 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "http://localhost:8080/api/cars/combustion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cars",
+						"combustion"
+					]
+				}
 			},
 			"response": []
 		},
@@ -19,7 +31,19 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "http://localhost:8080/api/cars/electrico",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cars",
+						"electrico"
+					]
+				}
 			},
 			"response": []
 		},
@@ -28,7 +52,19 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "http://localhost:8080/api/cars/hibrido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cars",
+						"hibrido"
+					]
+				}
 			},
 			"response": []
 		},
@@ -37,7 +73,19 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "http://localhost:8080/api/cars/error",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cars",
+						"error"
+					]
+				}
 			},
 			"response": []
 		}
