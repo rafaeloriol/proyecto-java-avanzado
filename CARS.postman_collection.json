@@ -33,7 +33,7 @@
 			"response": []
 		},
 		{
-			"name": "/cars/error",
+			"name": "/cars/{error}",
 			"request": {
 				"method": "GET",
 				"header": [],
