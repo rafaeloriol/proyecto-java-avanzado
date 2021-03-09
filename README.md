@@ -1,6 +1,7 @@
 # proyecto-java-avanzado
 
 Creación y configuración de aplicación con SpringBoot y Jersey desde Intellij Idea.
+
 Crear un controlador para coches, con un método que reciba un string por parámetro de url
 indicando el tipo de coche que quiere recibir. Existen tres tipos de coches: eléctrico, híbrido y de
 combustión.
